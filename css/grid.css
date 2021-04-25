@@ -103,6 +103,10 @@
 	.project-info{
 		grid-template-columns: 1fr;
 	}
+
+	.between-projects{
+		grid-column:2/12;
+	}
 }
 
 /*350 px===================*/
