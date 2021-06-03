@@ -64,6 +64,29 @@
 
 /*420 px===================*/
 @media screen and (max-width:27em){
+	/*main headings*/
+	h1{
+		font-family: 'Manrope', sans-serif;
+		font-size:2rem;
+	}
+	
+	h2{
+		font-family: 'Manrope', sans-serif;
+		font-size: 1.5rem;
+		font-weight: 500;
+	}
+	
+	h3{
+		font-family: 'Manrope', sans-serif;
+		font-size:1.5rem;
+		font-weight: 500;
+	}
+	
+	h4{
+		font-family: 'Manrope', sans-serif;
+		font-size:0.9rem;
+		font-weight: 500;
+	}
 	/*Landing Page*/
 	.down-arrow{
 		margin-top:1rem;
