@@ -5,7 +5,7 @@
 
 body{
 	margin:0;
-	background-color:#F4F0EC;
+	/*background-color:#F4F0EC;*/
 }
 
 html{
@@ -75,10 +75,16 @@ p, li{
 	color:black;
 }
 
+.highlight{
+	background-color: rgb(247, 64, 58, .25);
+	font-weight:400;
+}
+
 /*changing colours in paragraphs or headings*/
 mark{
 	background:none;
 }
+
 
 /*MAIN NAV===============*/
 .nav-link-left{
@@ -107,8 +113,8 @@ nav{
 }
 
 header{
-	background-color:#F4F0EC;
-	/*background-color:white;*/
+	/*background-color:#F4F0EC;*/
+	background-color:white;
 	position:sticky;
 	top:0;
 	width:100%;	
