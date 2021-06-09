@@ -31,6 +31,13 @@
 	.project-detail{
 		grid-column:2/12;
 	}
+
+	/*VICE PAGE*/
+	.vice-colour-container{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 1.25rem;
+}
 }
 
 /*576 px===================*/

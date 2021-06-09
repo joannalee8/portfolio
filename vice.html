@@ -1,0 +1,172 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/grid.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
+
+	<title>VICE Mobile App</title>
+</head>
+
+<body>
+	<header class="main-nav">
+		<nav class= "main-nav-container">
+			<div class= "nav-link-left">
+				<a href="index.html" class="nav-name">Joanna Lee</a>
+			</div>
+			<div class= "nav-links-right">
+				<a href="index.html#works-section">works</a>
+				<a href="about.html">about</a>
+			</div>
+		</nav>
+	</header>
+
+	<div class="main-container">
+		<h1 class= "project-heading">VICE Mobile App</h1>
+		<div class="main-graphic">
+			<img src="img/vice/bookmarking.gif" alt= "gif of bookmarking feature">
+		</div>
+
+		<div class="project-info">
+			<div class="info-left">
+				<h4>About:</h4>
+				<p>VICE Media strives to provide current events to a younger target audience, specifically the Millennial and Gen-Z generation. The mobile application gives easy access to read articles, watch videos, and share to friends.</p>
+			</div>
+			<div class="info-right">
+				<h4>Role:</h4>
+				<p>UI Designer, UX Researcher, Copywriter</p>
+				<h4>Tools:</h4>
+				<p>Figma, Paper + Pen</p>
+				<h4>Duration:</h4>
+				<p>2 Weeks - June 2021</p>
+			</div>
+		</div>
+
+		<div class= "project-detail">
+			<h2>Planning out the Project</h2>
+			<p>The project started with a simple analysis of the current VICE application, looking at the <b class= "highlight">colours, layout, icons, and interactions.</b> Then the research expanded to interviews with <b class ="highlight">two intended users</b> to understand their familiarity with VICE and their application, their current frustrations they have with the application, and features that they appreciate. This led to exploring two possible new features and finally, <b class= "highlight">narrowing it down to one with a full mockup.</b></p>
+
+			<h2>Interface Analysis</h2>
+			<p>The analysis of the interface looked at four properies:</p>
+			<ol>
+				<li>Colour</li>
+				<li>Icons</li>
+				<li>Layout</li>
+				<li>Interaction patterns</li>
+			</ol>
+			
+			<h3>Colour</h3>
+			<p>There are four main colours used in the VICE mobile application: black, white, green, and red.</p>
+			<div class= "vice-colour-container">
+				<div class= "vice-black">
+					<p>#000000</p>
+					<p>Top navigation, headings, paragraphs</p>
+				</div>
+
+				<div class= "vice-white">
+					<p>#FFFFFF</p>
+					<p>Background, headings, paragraphcs, icons</p>
+				</div>
+
+				<div class= "vice-green">
+					<p>#7EC787</p>
+					<p>Confirmation message background</p>
+				</div>
+
+				<div class= "vice-red">
+					<p>#FE0B0B</p>
+					<p>Logout paragraph colour</p>
+				</div>
+			</div>
+
+			<h3>Icons</h3>
+			<p>There are four icons that are being used in the VICE mobile application: profile icon, bookmark icon, search icon, and the share icon.</p>
+			<div class= "vice-colour-container">
+				<img src="img/vice/profile-icon.png">
+				<img src="img/vice/bookmark-icon.png">
+				<img src="img/vice/search-icon.png">
+				<img src="img/vice/share-icon.png">
+			</div>
+
+			<h3>Layout</h3>
+			<p>The VICE mobile application utilizes a single column grid and a three column grid.</p>
+			<h4>Single Column</h4>
+			<p>Used for the feed, the settings, the bookmarking section, and search function</p>
+			<div class= "single-column">
+				<div class= "column">1</div>
+			</div>
+
+			<h4>Three Column</h4>
+			<p>Used for the main feed for articles that are not the hero article</p>
+				<div class= "three-column">
+				<div class= "column">1</div>
+				<div class= "column">2</div>
+				<div class= "column">3</div>
+			</div>
+
+			<h3>Interaction Patterns</h3>
+			<p>The VICE app uses a horizontal scroll for all the pages. The horizontal scroll is used to move from one category to another. Swipe down is used to exit an article, which is a popup.</p>
+			<div class= "interaction-container">
+				<img src= "img/vice/vertical-scroll.gif">
+				<img src= "img/vice/horizontal-scroll.gif">
+				<img src= "img/vice/swipe-down.gif">
+			</div>
+
+			<h2>User Interviews</h2>
+			<p>As VICE's target audience are people in the age generations of Gen-Zs and Millennials, two users from each generation group was interviewed.</p>
+			<h3>Gen-Z, 22, University Student</h3>
+			<p>This user is familiar with VICE and have read articles and watched videos produced by VICE. However, he does not use the application on a daily basis. His main frustration with the app was the fact <b class= "highlight">the application doesn't give the user an easy way to organize bookmarks.</b></p>
+			<h4>"How is the bookmark page organized? Even though the application shows me which articles that I have read, what if I need to organize the articles in a certain way? Is there a feature for that?"</h4>
+			
+			<h3>Millennial, 26, Operations Specialist</h3>
+			<p>This user too is familiar with VICE and have read articles and watched videos produced by VICE. However, he does not use the application on a daily basis. His main frustration with the app was the fact <b class= "highlight">the application doesn't give the user an easy way to filter through subcategories within the main categories.</b></p>
+			<h4>“I want a quick way to find articles that are about basketball because I don’t care for other sports, such as hockey and football.”</b></h4>
+
+			<h2>Deciding on a New Feature</h2>
+			<p>The new feature I chose to design was a way to sort through bookmarks as there was no subcategory tags to implement a feature that would be able to filter through it. To keep the interaction patterns as smooth as possible, the <b class= "highlight">new bookmark organization feature was chosen.</b></p>
+
+			<h3>Bookmarking Folders</h3>
+			<p>When the user taps onto the bookmark icon on an article, a bottom popup will appear, prompting the user to add the article into pre-existing folders. If an appropriate folder isn't present, the user is able to create a new folder.</p>
+			<img src="img/vice/bookmarking-folder.gif">
+
+			<h3>Confirmation Notification</h3>
+			<p>When the user bookmarks an article into a folder, a notification will pop at the top of the navigation to confirm. <b class= "highlight">This is inline with VICE's interaction pattern as there is a green confirmation at the top nav when user's change their preferences in the settings.</b></p>
+			<img src="img/vice/confirmation.gif">
+
+			<h3>Bookmarking Section</h3>
+			<p>When tapping on the bookmark icon in the top nav, the user will be brought to the bookmark sections and can see an overview of the folders. They are able to add folders in this section as well.</p>
+			<img src="img/vice/folder-overview.gif">
+
+			<h3>Inside the Folder</h3>
+			<p>Inside the folder, the user will be able to see the articles that they bookmarked. In the case they bookmarked a video, it'll be shown in the video section. This can be access by horizontally swiping between each section.</p>
+			<img src="img/vice/folder.gif">			
+
+			<h2>Demo Video</h2>
+			<video controls>
+				<source src= "video/vice-demo.mp4" type="video/mp4">
+			Your browser does not support the video tag</video>
+			</video>
+
+
+			<h2>Reflection</h2>
+			<p>Designing a new feature for an existing app with existing users is proven to be more difficult than creating a new app. Since the existing users are already famililar with the interface as well as the patterns, the feature needs to be seemlessly placed within the app so the users are able to pick up the feature instantly. Using the same design language as the existing interface is another important point. Through this assignment, <b class= "highlight">I was able to understand that designing a feature that is not flashy but incorporates seemlessly is just as important as designing a ground-breaking feature.</b></p>
+		</div>
+
+		<div class= "between-projects">
+			<div class= "previous-project">
+				<a href= "caffe-mira.html" class= "red-text">< Caffe Mira</a>
+			</div>
+
+		</div>
+	</div><!-- end of main container-->
+	<footer>
+		<div class= "footer-center">
+			<p>Hand-coded and designed by Joanna | Powered by black coffee.</p>
+		</div>
+	</footer>
+</body>
+</html>
