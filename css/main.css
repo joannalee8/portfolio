@@ -55,8 +55,8 @@ a{
 	font-family: 'Manrope', sans-serif;
 }
 
-a:hover{
-	color:#F7403A;
+a:visited{
+	color: black;
 }
 
 p, li{
