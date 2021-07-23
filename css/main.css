@@ -53,9 +53,6 @@ h4{
 
 a{
 	font-family: 'Manrope', sans-serif;
-}
-
-a:visited{
 	color: black;
 }
 
@@ -68,8 +65,8 @@ p, li{
 /***COLOUR***/
 .red-text{
 	color:#F7403A;
-	text-decoration: none;
 }
+
 
 .black{
 	color:black;
@@ -102,7 +99,7 @@ mark{
 nav a{
 	text-decoration: none;
 	font-size:1.5rem;
-	color:black;
+	/*color:black;*/
 }
 
 nav{
