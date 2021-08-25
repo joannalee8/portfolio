@@ -1,0 +1,269 @@
+/*GLOBAL===================*/
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin:0;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+img{
+	width:100%;
+	height:auto;
+}
+
+video{
+	width:100%;
+	height:auto;
+}
+
+.video-mobile{
+	width:50%;
+}
+
+/***TYPOGRAPHY***/
+h1{
+	font-family: 'Manrope', sans-serif;
+	font-size:3.5rem;
+	font-weight: 700;
+}
+
+h2{
+	font-family: 'Manrope', sans-serif;
+	font-size: 2.875rem;
+	font-weight: 700;
+}
+
+h3{
+	font-family: 'Manrope', sans-serif;
+	font-size:2.2rem;
+	font-weight: 500;
+}
+
+h4{
+	font-family: 'Manrope', sans-serif;
+	font-size:1.5rem;
+	font-weight: 500;
+}
+
+h5{
+	font-family: 'Manrope', sans-serif;
+	font-size:1.125rem;
+	font-weight: 500;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover{
+	color: #967FF4;
+}
+
+p, li{
+	font-family: 'Manrope', sans-serif;
+	font-size:1rem;
+	max-width:80ch;
+}
+
+/***COLOUR***/
+.purple{
+	color:#967FF4;
+}
+
+em{
+	color: #967FF4;
+	font-weight: 600;
+}
+
+/***BACK TO TOP BUTTON***/
+#topButton{
+	cursor: pointer;
+}
+
+.back-to-top{
+	grid-column: 1/span 12;
+	justify-self: center;
+}
+
+#topButton:hover{
+	color: #967FF4;
+}
+
+/***TOP NAV***/
+
+.main-nav-container{
+	box-shadow:  0 0 1rem 0 rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em 10% 1em 10%;
+}
+
+.nav-items-right{
+	display: flex;
+	align-items: center;
+}
+
+.nav-items-right>*+*{
+	margin-left: 2.5rem;
+}
+
+.nav-items-right h5{
+	margin: 0;
+}
+
+.nav-items-left h5{
+	margin: 0;
+}
+
+/***LANDING***/
+.landing-info{
+	grid-column: 1/span 10;
+	margin: 15% 0;
+}
+
+/**PROJECTS***/
+.works{
+	grid-column: 1/span 12;
+}
+
+.loop-landing{
+	grid-column: 1;
+}
+
+.ventura-landing{
+	grid-column: 2;
+}
+
+.mira-landing{
+	grid-column: 1;
+}
+
+.dippd-landing{
+	grid-column: 2;
+}
+
+/***ABOUT SECTION***/
+.about{
+	grid-column: 3/span 9;
+	margin: 10% 0;
+}
+
+.about h1{
+	text-align: center;
+	grid-column: 1/span 4;
+}
+
+.about img{
+	grid-column: 1/span 2;
+	border-radius: 15px;
+}
+
+.about-info{
+	grid-column: 3/span 4;
+}
+
+/***FOOTER***/
+footer{
+	grid-column: 1/span 12;
+}
+
+.footer{
+	border-top:1px solid rgba(0,0,0,.3);
+	display: flex;
+	justify-content: space-between;
+	margin: 0 10% 2% 10%;
+}
+
+/*====================PROJECT PAGES =========================*/
+#project-hero-section{
+	background-size: cover;
+	flex: 100%;
+	margin: 0;
+}
+
+.project-info{
+	grid-column: 1/span 12;
+	display: flex;
+	grid-gap: 2rem;
+
+}
+
+.project-info p{
+	margin: 0;
+}
+
+.project-info h4{
+	margin-bottom: 0;
+}
+
+.project-details-container{
+	grid-column: 1/span 12;
+	margin-top: 10%;
+}
+
+/***VENTURA***/
+.personas img{
+	border: 0.5px solid rgba(0,0,0,.3);
+}
+
+.research-results img{
+	border: 0.5px solid rgba(0,0,0,.3);
+}
+
+.design-focus{
+	display: flex;
+	grid-gap: 2rem;
+}
+
+.friedman-works{
+	display: flex;
+}
+
+.friedman1{flex:1.01426307;}
+.friedman2{flex:1.55223881;}
+
+.totebags{
+	margin: 5% 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.sketchbooks{
+	margin: 5% 0;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.vf-assets{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.interactions{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 2rem;
+}
+
+/***DIPPD***/
+
+.goals{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 2rem;
+}
+
+.goals>img{
+	border: 0.5px solid rgba(0,0,0,.3);
+}
+
+.moodboard>img{
+	border: 0.5px solid rgba(0,0,0,.3);
+}

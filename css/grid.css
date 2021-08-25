@@ -1,0 +1,21 @@
+/***WHOLE SITE***/
+.main-container{
+	display:grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap:1.25rem;
+	margin: 0 10%;
+}
+
+/**PROJECTS IN LANDING***/
+.works{
+	grid-column: 1/span 12;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap:1.25rem;
+}
+
+.about{
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 2rem;
+}
