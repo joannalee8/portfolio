@@ -31,9 +31,6 @@
 	.about-info{
 		grid-column: 1/ span 4;
 	}
-	.about{
-		grid-column: 2/span 11;
-	}
 
 }
 
@@ -121,5 +118,9 @@
 
 	.footer p{
 		font-size: 0.75rem;
+	}
+
+	.about{
+		margin: 10% 0%;
 	}
 }

@@ -151,8 +151,8 @@ em{
 
 /***ABOUT SECTION***/
 .about{
-	grid-column: 3/span 9;
-	margin: 10% 0;
+	grid-column: 1/span 12;
+	margin: 10% 15%;
 }
 
 .about h1{
