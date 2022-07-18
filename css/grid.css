@@ -7,120 +7,93 @@
 }
 
 /**PROJECTS IN LANDING***/
-.works{
-	grid-column: 1/span 12;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap:1.25rem;
-}
 
-.about{
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 2rem;
-}
 
 /*Media Queries=========================================================================================================*/
 
-/*Inbetween(860px)*/
-@media screen and (max-width:54em){
-	.about img{
-		grid-column: 1/span 4;
+@media screen and (min-width:88em){
+
+	.main-wrapper{
+		margin: 0 20%;
 	}
 
-	.about-info{
-		grid-column: 1/ span 4;
+	.text-wrapper{
+		margin:  0 30% 0 30%;
+	}
+
+	.main-nav-container{
+		margin:  0 10% 0 10%;
+	}
+
+	.about-container{
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.about{
+		grid-column: 3;
+	}
+	.about-container>img{
+		grid-column:2;
+	}
+
+
+}
+
+/*Inbetween(1280px)*/
+@media screen and (max-width:80em){
+	.photo-info{
+		display: flex;
+		flex-direction: column;
 	}
 
 }
 
-/*Inbetween(721px)*/
-@media screen and (max-width:45.063em){
-	h1{
-		font-size:2.625rem;
-	}
-
-	h2{
-		font-size:2.15625rem;
-	}
-
-	h3{
-		font-size: 1.65rem;
-	}
-
-	h4{
-		font-size: 1.125rem;
-	}
-
-}
-
-/*Inbetween(450px)*/
-@media screen and (max-width:28.125em){
+/*Inbetween(1068px)*/
+@media screen and (max-width:67em){
 	.landing-info{
-		grid-column: 1/span 12;
+		flex-direction: column;
 	}
 
-	.landing-info h2{
-		font-size: 1.8rem;
+	.landing-info>h1{
+		text-align: center;
 	}
-
-	.landing-info h5{
-		font-size: 1rem;
+	.landing-more-info{
+		text-align: center;
 	}
-
-	.nav-items-right>*+*{
-		margin-left:  1rem;
-	}
-
-	.works{
+	.about-container{
 		grid-template-columns: 1fr;
 	}
 
-	.loop-landing{
+	.about-container>img{
 		grid-column: 1;
 	}
 
-	.ventura-landing{
+	.about{
 		grid-column: 1;
 	}
+}
 
-	.mira-landing{
-		grid-column: 1;
-	}
-
-	.dippd-landing{
-		grid-column: 1;
-	}
-
-	.project-info{
-		display: flex;
+/*Inbetween(645px)*/
+@media screen and (max-width:41em){
+	.more-info-list{
 		flex-direction: column;
 	}
 
-	.interactions{
-		display: flex;
-		flex-direction: column;
+	.main-container{
+		margin: 0 5%;
 	}
 
-	.design-focus{
-		flex-direction: column;
+	.text-wrapper{
+		margin: 0 5%;
 	}
 
-	.goals{
-		display: flex;
-		flex-direction: column;
-	}
-
-	.footer {
+	.footer{
 		flex-direction: column;
 		align-items: center;
 	}
 
-	.footer p{
-		font-size: 0.75rem;
+	.footer>h6{
+		margin: 5% 0 5% 0;
 	}
 
-	.about{
-		margin: 10% 0%;
-	}
 }

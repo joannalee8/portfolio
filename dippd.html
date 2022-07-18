@@ -4,125 +4,153 @@
 <head>
 	<meta charset="utf-8">
 	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/grid.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon_io/favicon-32x32.png">
 
-	<title>Dipp'd Donuts</title>
+	<title>Joanna Lee</title>
 </head>
 
 <body>
 	<header class="main-nav">
 		<nav class= "main-nav-container">
-			<div class= "nav-items-left">
-				<a href="index.html"><h5>Joanna Lee</h5></a>
-			</div>
-			<div class= "nav-items-right">
-				<a href="index.html#works-section"><h5>Works</h5></a>
-				<a href="index.html#about-section"><h5>About</h5></a>
+			<div class="main-nav-items">
+				<h5><a href="index.html">Joanna Lee</a></h5>
+				<h5 id="countdown">00:00:00:00</h5>
+				<h5><a href="playground.html">Playground</a></h5>
 			</div>
 		</nav>
 	</header>
 
-	<img src="img/dippd/hero.png">
-	<div class="main-container dippd-page">
-		<div class="project-info">
-			<div class="project-about">
+	<div class="main-container">
+		<div class="landing">
+			<div class="landing-info">
 				<h1>Dipp'd Donuts</h1>
-				<p>Dipp'd is a fictional donut shop based in Toronto, Ontario. Dipp'd is looking to expand their business by allowing online purchases for either delivery or pickup. <a href= "http://www.sfu.ca/~ybaik/iat339/dippd-ecommerce/">View the website here.</a></p>
+				<div class="landing-more-info">
+					<h6>Dipp'd is a fictional donut shop based in Toronto, Ontario. Dipp'd is looking to expand their business by allowing online purchases for either delivery or pickup.</h6>
+				</div>
+			</div>
+			<button class="accordion purple">project info</button>
+			<div class="panel">
+
+				<div class="more-info-list">
+					<div class="expanded-headings"><p>ROLE</p></div>
+					<h5>Interaction Designer, Copywriter, Front-end Developer</h5>
+				</div>
+
+				<div class="more-info-list">
+					<div class="expanded-headings"><p>TOOLS</p></div>
+					<h5>Figma, HTML, CSS, Javascript</h5>
+				</div>
+
+				<div class="more-info-list">
+					<div class="expanded-headings"><p>TEAM</p></div>
+					<h5><a class="purple" href="davidbaik.com" target="_blank">David Baik, </a><a class="purple" href="jonathanchoi.ca" target="_blank">Jonathan Choi, </a></h5>
+				</div>
+
+				<div class="more-info-list">
+					<div class="expanded-headings"><p>DURATION</p></div>
+					<h5>3 Months</h5>
+				</div>
+			</div> <!-- end of accordion panel-->
+		</div> <!-- end of landing-->
+		
+		<div class="projects-section">
+			<div class="text-wrapper">
+				<div class="mockup-wrapper">
+					<img src="img/mac-mockup.png">
+					<video controls class="prototype" poster="img/dippd/demo-thumbnail.png">
+						<source src="vid/dippd-demo.mp4" type="video/mp4">
+					</video>
+				</div>
+			</div>
+			<h2>An e-commerce site to allow Dipp'd Donuts to expand their business as well as to reflect their business identity. An exploration around the Dipp'd brand as well as seamless online shopping experience.</h2>
+
+			<h4>Dipp'd: The Brand</h4>
+			<div class="text-wrapper">
+				<p>Dipp'd is a donut shop located in Toronto, Ontario and specializes in colourful and unique donuts to match the personalities of their clients. They are looking to scale their business and reach a larger audience by creating jumping onto the e-commerce trend.</p>
+				<p>In order to meet the needs of our client, the team developed an Art Direction and Brand Strategy in combination of UX Research to build a solution.</p>
 			</div>
 
-			<div class="project-details">
-				<h4>Role</h4>
-				<p>Interaction Designer, Copywriter, Front-end Developer</p>
-				<h4>Tools</h4>
-				<p>Figma, HTML, CSS, Javascript</p>
-				<h4>Team</h4>
-				<p><a href="https://www.davidbaik.com/">David Baik</a>, <a href="https://www.jonathanchoi.ca/">Jonathan Choi</a></p>
-				<h4>Duration</h4>
-				<p>3 Months (January 2021 - March 2021)</p>
+			<h4>UX Research</h4>
+			<div class="text-wrapper">
+				<p>The team first started the project by looking at precedent e-commerce sites that were used to conduct user research to get a sense of what the goals of users and the client would look like. The following sites that are examined were:</p>
+				<ul>
+					<li><a href="https://eatnuggs.com/">Nuggs</a></li>
+					<li><a href="https://cartems.com/">Cartems Donuts</a></li>
+					<li><a href="https://simplychocolate.dk/">Simply Chocolate</a></li>
+					<li><a href="https://rayconglobal.com/">Raycon</a></li>
+					<li><a href="https://49thcafe.com/">Lucky's Doughnuts</a></li>
+				</ul>
 			</div>
-		</div>
 
-		<div class="project-details-container">
-			<h3>Dipp'd: The Brand</h3>
-			<p>Dipp'd is a donut shop located in Toronto, Ontario and specializes in colourful and unique donuts to match the personalities of their clients. They are looking to scale their business and reach a larger audience by creating jumping onto the e-commerce trend.</p>
-			<p>In order to meet the needs of our client, the team developed an Art Direction and Brand Strategy in combination of UX Research to build a solution.</p> 
-			<h3>UX Research</h3>
-			<p>The team first started the project by looking at precedent e-commerce sites that were used to conduct user research to get a sense of what the goals of users and the client would look like. The following sites that are examined were:</p>
-			<ul>
-				<li><a href="https://eatnuggs.com/">Nuggs</a></li>
-				<li><a href="https://cartems.com/">Cartems Donuts</a></li>
-				<li><a href="https://simplychocolate.dk/">Simply Chocolate</a></li>
-				<li><a href="https://rayconglobal.com/">Raycon</a></li>
-				<li><a href="https://49thcafe.com/">Lucky's Doughnuts</a></li>
-			</ul>
+			<div class="text-wrapper">
+				<h6>User-Testing</h6>
+					<p>User-testing was conducted with six individuals ranging from the ages of 22-50. The user-testing was based on <em>memory retention, CTA clickability, and the general checkout process.</em> Reflecting the results of the user-testing, the following goals for the client and users were created:</p>	
+			</div>
 
-			<h4>User-Testing</h4>
-			<p>User-testing was conducted with six individuals ranging from the ages of 22-50. The user-testing was based on <em>memory retention, CTA clickability, and the general checkout process.</em> Reflecting the results of the user-testing, the following goals for the client and users were created:</p>
-			<div class="goals">
+			<div class="two-photos outline-photo">
 				<img src="img/dippd/dippd-user-goals.jpeg">
 				<img src="img/dippd/dippd-client-goals.jpeg">
 			</div>
 
-			<h3>The Direction</h3>
-			<p>The team created a moodboard to be on the same page in terms of art direction. Images that show the essense of the brand as well as colours that may potentially be used was compiled to make the moodboard.</p>
-			<div class="moodboard"><img src="img/dippd/dippd-moodboard.jpeg"></div>
-			<h3>Design Pattern</h3>
-			<p>Colours were used in the site to <em>categorize different sections that provided information.</em></p>
-			<ul>
-				<li>Violet: Primary colour for the brand of Dipp'd</li>
-				<li>Yellow: Signifies interactability</li>
-				<li>Teal: Information pages</li>
-				<li>Magenta: Shoppings pages</li>
-			</ul>
+			<h4>The Direction</h4>
+			<div class="text-wrapper">
+				<p>The team created a moodboard to be on the same page in terms of art direction. Images that show the essense of the brand as well as colours that may potentially be used was compiled to make the moodboard.</p>
+				<div class="outline-photo"><img src="img/dippd/dippd-moodboard.jpeg"></div>
+			</div>
+
+			<h4>Design Pattern</h4>
+			<div class="text-wrapper">
+				<p>Colours were used in the site to <em>categorize different sections that provided information.</em></p>
+				<ul>
+					<li>Violet: Primary colour for the brand of Dipp'd</li>
+					<li>Yellow: Signifies interactability</li>
+					<li>Teal: Information pages</li>
+					<li>Magenta: Shoppings pages</li>
+				</ul>
 
 			<p>A complete pattern library that helped keep the team on the same page was created to refer back to. Repeated module, code snippets, the site map, wireframes, and mockups are included in the pattern library. <a href="http://www.sfu.ca/~ybaik/iat339/Dippd-Pattern-Library/">The pattern library can be viewed here.</a></p>
 
-			<div>
-				<h3>Interactions</h3>
-				<div class="interactions">
-					<div>
-						<img src="img/dippd/dippd-landing.gif">
-						<p>Visitors are met with a splash of colours to introduce the brand identity as well as the colour system.</p>
-					</div>
-					<div>
-						<img src="img/dippd/dippd-carousel.gif">
-						<p>From our user research, <em>customer testimonals were very important for the user to trust the website.</em> A social media carousel was created to showcase current clientale. The carousel is activated on drag and the user will be able to view different social media posts that were uploaded by existing clientale.</p>
-					</div>
-					<div>
-						<img src="img/dippd/dippd-shop.gif">
-						<p>Through user research, it was found that <em>when users decide on buying donuts, they look at only the name of the donut as well as the photo.</em> In the case they have dietary restrictions, they search for symbols. As their decision to purchase a certain type of donut was limited, the team decided to not include separate product pages but utilize the hover interaction to show product details.</p>
-					</div>
-					<div>
-						<video controls>
-							<source src= "vid/dippd-demo.mp4" type="video/mp4">
-							Your browser does not support the video tag
-						</video>
-						<p><em>Demo video with all interactions.</em><p>
-					</div>
-				</div> 
+			</div>
 
-				<div>
-					<h3>Reflection</h3>
+			<h4>Interactions</h4>
+			<div class="text-wrapper">
+				<h6>Landing Page</h6>
+				<img src="img/dippd/dippd-landing.gif">
+				<p>Visitors are met with a splash of colours to introduce the brand identity as well as the colour system.</p>
+
+				<h6>Social Media Carousel</h6>
+				<img src="img/dippd/dippd-carousel.gif">
+				<p>From our user research, <em>customer testimonals were very important for the user to trust the website.</em> A social media carousel was created to showcase current clientale. The carousel is activated on drag and the user will be able to view different social media posts that were uploaded by existing clientale.</p>
+
+				<h6>Shop Page</h6>
+				<img src="img/dippd/dippd-shop.gif">
+				<p>Through user research, it was found that <em>when users decide on buying donuts, they look at only the name of the donut as well as the photo.</em> In the case they have dietary restrictions, they search for symbols. As their decision to purchase a certain type of donut was limited, the team decided to not include separate product pages but utilize the hover interaction to show product details.</p>
+			
+			</div>
+
+			<h4>Reflection</h4>
+				<div class="text-wrapper">
 					<p>As a designer, it was an eye-opening experience to hand-code a whole e-commerce site for the first time. It is important for designers to <em>know the process from a front-end developer's perspective</em> as it helps with understanding what is feasible and what is not. I am proud of my team and I for straying away from our comfort of using black and white and experimenting with colour. Through this project, I am proud to say that we are not afraid of using colour like we used to be and we now <em>understand the power of colour.</em> I want to also thank David and Jonathan for being the best group mates! We definitely pushed each other to design and code to the best of our abilities and I really look forward to see what we can do in the future.</p>
 				</div>
 			</div>
 
-		</div>
-
-		<div class="back-to-top"><p onclick="topFunction()" id="topButton" title="Go to top">Back to top</p></div>
+		</div> <!-- end of projects container-->
 	</div> <!-- end of main-container-->
 	<footer> 
 		<div class= "footer">
-			<p>Last Updated 2022 February</p>
-			<p>Powered by black coffee </p>
-			<p>Hand-coded and Designed </p>
+			<h6>LAST UPDATED JULY 2022</h6>
+			<div class="back-to-top"><h6 onclick="topFunction()" id="topButton" title="Go to top">BACK TO TOP</h6></div>
+			<h6>POWERED BY COFFEE</h6>
 		</div>
 	</footer>
 
+	<script src="js/accordion.js"></script>
 	<script src="js/scrollToTop.js"></script>
+	<script src="js/countDown.js"></script>
 
 </body>
 </html>

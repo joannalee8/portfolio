@@ -28,20 +28,21 @@ video{
 /***TYPOGRAPHY***/
 h1{
 	font-family: 'Manrope', sans-serif;
-	font-size:3.5rem;
-	font-weight: 700;
+	font-size:4rem;
+	font-weight: 400;
 }
 
 h2{
 	font-family: 'Manrope', sans-serif;
-	font-size: 2.875rem;
-	font-weight: 700;
+	font-size: 2.2rem;
+	font-weight: 500;
+	/*text-align: center;*/
 }
 
 h3{
 	font-family: 'Manrope', sans-serif;
 	font-size:2.2rem;
-	font-weight: 500;
+	font-weight: 400;
 }
 
 h4{
@@ -53,7 +54,13 @@ h4{
 h5{
 	font-family: 'Manrope', sans-serif;
 	font-size:1.125rem;
-	font-weight: 500;
+	font-weight: 400;
+}
+
+h6{
+	font-family: "ubuntu mono", monospace;
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 a{
@@ -97,76 +104,168 @@ em{
 
 /***TOP NAV***/
 
-.main-nav-container{
-	box-shadow:  0 0 1rem 0 rgba(0, 0, 0, 0.1);
+.main-nav-items{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1em 10% 1em 10%;
 }
 
-.nav-items-right{
-	display: flex;
-	align-items: center;
-}
-
-.nav-items-right>*+*{
-	margin-left: 2.5rem;
-}
-
-.nav-items-right h5{
-	margin: 0;
-}
-
-.nav-items-left h5{
-	margin: 0;
+.main-nav-container{
+	margin: 0 5% 0 5%;
+	border-bottom:1px solid rgba(0,0,0,.3);
 }
 
 /***LANDING***/
+.landing{
+	grid-column: 1/span 12;
+	margin-top: 15%;
+	border-bottom:1px solid rgba(0,0,0,.3);
+}
+
 .landing-info{
-	grid-column: 1/span 10;
-	margin: 15% 0;
+	border-top:1px solid rgba(0,0,0,.3);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.landing-more-info{
+	font-size: 1.25rem;
+	max-width:40ch;
+	text-align: right;
+	display: flex;
+	flex-direction: column;
+}
+
+.landing-more-info>h6{
+	margin: 2% 0 2% 0;
+}
+
+/***ACCORDION***/
+.accordion{
+	cursor: pointer;
+	width: 100%;
+	background-color: white;
+	outline: none;
+	border: none;
+	font-size: 1rem;
+	margin-bottom: 2%;
+	transition: 0.4s;
+}
+
+.accordion:after{
+  content: '\002B';
+  color: #967FF4;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.active:after{
+	content: "\2212";
+}
+
+.panel{
+	background-color: white;
+	max-height: 0;
+  	overflow: hidden;
+ 	transition: max-height 0.2s ease-out;
+}
+
+.about-container{
+	border-top:1px solid rgba(0,0,0,.3);
+	padding-top: 5%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1.25rem;
+}
+
+.about-container>img{
+	grid-column: 1;
+}
+
+.about{
+	grid-column: 2/ span 3;
+	text-align: right;
+}
+
+.expanded-headings>p{
+	font-size: 1rem;
+	font-weight: 700;
+	margin: 2% 0 0 0;
+}
+
+.more-info-list{
+	border-top:1px solid rgba(0,0,0,.3);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom:1px solid rgba(0,0,0,.3);
+}
+
+.more-info-list>h5{
+	margin: 2% 0 2% 0;
 }
 
 /**PROJECTS***/
-.works{
+
+.projects-section{
 	grid-column: 1/span 12;
 }
 
-.loop-landing{
-	grid-column: 1;
+.project{
+	margin-top: 15%;
+	display: flex;
+	flex-direction: column;
 }
 
-.ventura-landing{
-	grid-column: 2;
+.photo-info{
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 1.25rem;
 }
 
-.mira-landing{
-	grid-column: 1;
+.project-photo{
+	grid-column: 1/span 7;
 }
 
-.dippd-landing{
-	grid-column: 2;
+.project-description{
+	grid-column: 8/span 12;
+	display: flex;
+	flex-direction: column;
 }
 
-/***ABOUT SECTION***/
-.about{
-	grid-column: 1/span 12;
-	margin: 10% 15%;
+.project-description>h3{
+	margin-bottom: 0;
 }
 
-.about h1{
-	text-align: center;
-	grid-column: 1/span 4;
+.project-description>a{
+	font-family: 'Manrope', sans-serif;
+	font-weight: 500;
+	font-size: 1rem;
+	border-bottom:1px solid rgb(120, 65, 238);
 }
 
-.about img{
-	grid-column: 1/span 2;
-	border-radius: 15px;
+.project-more-info{
+	grid-row: 2;
+	border-bottom:1px solid rgba(0,0,0,.3);
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
 }
 
-.about-info{
-	grid-column: 3/span 4;
+.project-type{
+	justify-self: left;
+}
+
+.experience-type{
+	justify-self: center;
+}
+
+.project-duration{
+	justify-self: right;
+}
+
+.project-more-info>h6{
+	margin-bottom: 2%;
 }
 
 /***FOOTER***/
@@ -175,95 +274,88 @@ footer{
 }
 
 .footer{
-	border-top:1px solid rgba(0,0,0,.3);
+	border-top:1px solid rgba(0,0,0,.3); /*this is the divider*/
 	display: flex;
 	justify-content: space-between;
 	margin: 0 10% 2% 10%;
 }
 
 /*====================PROJECT PAGES =========================*/
-#project-hero-section{
-	background-size: cover;
-	flex: 100%;
-	margin: 0;
+.prototype {
+    position: absolute;
+    width: 95%;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.project-info{
-	grid-column: 1/span 12;
-	display: flex;
-	grid-gap: 2rem;
-
+/*======JUST FOR CAFFE MIRA========*/
+.prototype-mira{
+	position: absolute;
+    width: 95%;
+    top: 3%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.project-info p{
-	margin: 0;
+.mockup-wrapper{
+	position: relative;
 }
 
-.project-info h4{
+.projects-section>h2{
+	text-align: center;
+	border-top:1px solid rgba(0,0,0,.3);
+	border-bottom:1px solid rgba(0,0,0,.3);
+	margin: 10% 0 10% 0;
+}
+
+.projects-section>h4{
+	text-align: center;
+	border-bottom:1px solid rgba(0,0,0,.3);
 	margin-bottom: 0;
 }
 
-.project-details-container{
-	grid-column: 1/span 12;
-	margin-top: 10%;
+.text-wrapper>h6{
+	text-align: center;
+	border-bottom:1px solid rgba(0,0,0,.3);
+	margin-bottom: 0;
+	font-weight: 600;
 }
 
-/***VENTURA***/
-.personas img{
+.text-wrapper{
+	margin: 0 15% 0 15%;
+}
+
+.text-wrapper>p{
+	margin-top: 2%;
+}
+
+.three-photos{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: 5% 0;
+}
+
+.two-photos{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 5% 0;
+}
+
+.outline-photo>img{
 	border: 0.5px solid rgba(0,0,0,.3);
 }
 
-.research-results img{
-	border: 0.5px solid rgba(0,0,0,.3);
-}
-
-.design-focus{
-	display: flex;
-	grid-gap: 2rem;
-}
-
+/*=============VENTURA FUTURE================*/
 .friedman-works{
 	display: flex;
 }
 
-.friedman1{flex:1.01426307;}
-.friedman2{flex:1.55223881;}
-
-.totebags{
-	margin: 5% 0;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+.friedman1{
+	flex: 1.01426307;
 }
 
-.sketchbooks{
-	margin: 5% 0;
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+.friedman2{
+	flex: 1.55223881;
 }
 
-.vf-assets{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-}
-
-.interactions{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 2rem;
-}
-
-/***DIPPD***/
-
-.goals{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 2rem;
-}
-
-.goals>img{
-	border: 0.5px solid rgba(0,0,0,.3);
-}
-
-.moodboard>img{
-	border: 0.5px solid rgba(0,0,0,.3);
-}
