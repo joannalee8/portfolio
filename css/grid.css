@@ -71,6 +71,10 @@
 	.about{
 		grid-column: 1;
 	}
+
+	.more-info-list>h5{
+		text-align: center;
+	}
 }
 
 /*Inbetween(645px)*/
