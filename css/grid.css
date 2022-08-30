@@ -92,16 +92,41 @@
 	}
 
 	.footer{
+		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
 
-	.footer>h6{
-		margin: 5% 0 5% 0;
+	.footer-left-item>h6{
+		margin: 20px 0 20px 0;
+	}
+
+	.footer-right-item>h6{
+		margin: 20px 0 20px 0;
+	}
+
+	.back-to-top>h6{
+		margin: 20px 0 20px 0;
 	}
 
 	.about{  
     	text-align: center;
+	}
+
+	h1{
+		font-size: 3rem;
+	}
+
+	h2{
+		font-size: 1.25rem;
+	}
+
+	h3{
+		font-size: 2rem;
+	}
+
+	.main-nav-items>h5{
+		font-size: 1rem;
 	}
 
 }

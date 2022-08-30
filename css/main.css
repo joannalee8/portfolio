@@ -274,10 +274,24 @@ footer{
 }
 
 .footer{
-	border-top:1px solid rgba(0,0,0,.3); /*this is the divider*/
-	display: flex;
-	justify-content: space-between;
-	margin: 0 10% 2% 10%;
+	border-top:1px solid rgba(0,0,0,.3);
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-left-item{
+	justify-self: left;
+	grid-column: 1;
+}
+
+.back-to-top{
+	justify-self: center;
+	grid-column: 2;
+}
+
+.footer-right-item{
+	justify-self: right;
+	grid-column: 3;
 }
 
 /*====================PROJECT PAGES =========================*/
