@@ -3,8 +3,9 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/grid.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,10 +17,12 @@
 <body>
 	<header class="main-nav">
 		<nav class= "main-nav-container">
-			<div class="main-nav-items">
-				<h5><a href="index.html">Joanna Lee</a></h5>
-				<h5 id="countdown">00:00:00:00</h5>
-				<h5><a href="playground.html">Playground</a></h5>
+			<div class="left-nav-items">
+				<h3><a class="black" href="index.html">JOANNA LEE</a></h3>
+			</div>
+			<div class="right-nav-items">
+				<h3><a class="black" href="playground.html">PLAYGROUND</a></h3>
+				<h3><a class="black" href="about.html">ABOUT</a></h3>
 			</div>
 		</nav>
 	</header>
@@ -27,157 +30,95 @@
 	<div class="main-container">
 		<div class="landing">
 			<div class="landing-info">
-				<h1>I'm Joanna 👋</h1>
-				<div class="landing-more-info">
-					<h6>a designer, driven by research, data, and great pour-over coffee.</h6>
-					<h6>Previously <a class="purple" href="https://www.stryker.com/">@Stryker,</a> <a class="purple" href="https://guusto.com/">@Guusto</a></h6>
-				</div>
-			</div>
-			<button class="accordion purple">about</button>
-			<div class="panel">
-				<div class="about-container">
-					<img src="img/joanna.JPG">
-					<div class="about">
-						<div class="about-me">
-							<p>I'm a UX Designer with a formal education in business and design. Currently studying at the Beedie School of Business and the School of Interactive Arts + Technology, I'm on my way of completing the Business + Design joint major program at Simon Fraser University. I plan to graduate in 2023 April. Check out my top nav to see a detailed countdown 🤙</p>
-							<p>During my free time you can catch me feeding my knitting addiction at coffee shops or challenging myself on the drums.</p>
-							<p>View my <a class="purple" href= "https://drive.google.com/file/d/1B4ZHjmEj8pjiP_SnNnBjyxXl1kXwo9bp/view" target="_blank">resume</a></p>
-							<p>Connect with me on <a class="purple" href="https://www.linkedin.com/in/joannalee8/" target="_blank">LinkedIn</a></p>
-						</div>
+				<h1><b class="underline">I’m Joanna, a data-driven product designer who makes design decisions grounded in research and user considerations.</b></h1>
+				<h2>—Previously worked @<a href="https://www.stryker.com/">Stryker</a> as a UX Designer.</h2>
+				<h3>Graduating April 2023. Currently seeking new opportunities.</h3>
 
-						<div class="expanded-headings"><p>PRESENT</p></div>
-						<div class="more-info-list">
-							<h5>2015/2023</h5>
-							<h5>Studying <a class="purple" href="https://www.sfu.ca/" target="_blank">@SFU</a></h5>
-						</div>
-						
-						<div class="expanded-headings"><p>PAST</p></div>
-						<div class="more-info-list">
-							<h5>2021/2022</h5>
-							<h5>UX/UI Design Co-op <a class="purple" href="https://www.stryker.com/" target="_blank">@Stryker</a></h5>
-						</div>
-						<div class="more-info-list">
-							<h5>2020</h5>
-							<h5>Business + Design Intern <a class="purple" href="https://guusto.com/" target="_blank">@Guusto</a></h5>
-						</div>
-
-						<div class="experience">
-							
-						</div>
-
+				<div class="project-navigation">
+					<div class="project-nav-rows">
+						<h3 class="column-1">YEAR</h3>
+						<h3 class="column-2">SELECT PROJECTS</h3>
+						<h3 class="column-3">TYPE</h3>
 					</div>
-				</div>
-			</div> <!-- end of accordion panel-->
+					<div class="project-nav-rows">
+						<h2 class="column-1"><a href="#nyt-section">2022</a></h2>
+						<h2 class="column-2"><a href="#nyt-section">New York Times</a></h2>
+						<h2 class="column-3"><a href="#nyt-section">Experience Design</a></h2>
+					</div>
+
+					<div class="project-nav-rows">
+						<h2 class="column-1"><a href="#watg-section">2022</a></h2>
+						<h2 class="column-2"><a href="#watg-section">Wool and the Gang</a></h2>
+						<h2 class="column-3"><a href="#watg-section">Experience Design</a></h2>
+					</div>
+
+					<div class="project-nav-rows">
+						<h2 class="column-1"><a href="#vf-section">2020</a></h2>
+						<h2 class="column-2"><a href="#vf-section">Ventura Future</a></h2>
+						<h2 class="column-3"><a href="#vf-section">Visual Design</a></h2>
+					</div>
+				</div><!-- end of project navigation-->
+			
+				<div class="arrow-to-projects"><a href="#projects"><span class="material-icons md-light">expand_more</span></a></div>
+			</div>
 		</div> <!-- end of landing-->
 		
-		<div class="projects-section">
+		<section id="projects">
+			<h3>SELECT PROJECTS</h3>
+			<section id="nyt-section">
+				<div class="project">
+					<h2 class="column-1">2022</h2>
+					<div class="project-info column-2">
+						<h2>NEW YORK TIMES</h2>
+						<p>Exploring audio-based article playlists to help New York Times’ occasional readers to 	consume news at times that fit their busy schedules in order to retain existing subscribers who do not make the time to read. </p>
+						<p class="not-ready">Coming Soon</p>
+						<a class="button" href="nyt.html">COMING SOON</a>
+					</div>
+					<img class= "column-3" src="img/NYT-landing.png">
+				</div>
+				
+			</section>
 
-			<div class="project">
-				<div class="photo-info">
-					<div class="project-photo">
-						<a href="stryker.html"><img src="img/stryker/stryker.png"></a> 
+			<section id="watg-section">
+				<div class="project">
+					<h2 class="column-1">2022</h2>
+					<div class="project-info column-2">
+						<h2>WOOL AND THE GANG</h2>
+						<p>A supplementary app, used in tandem with patterns, that provides knitters resources to overcome the beginning struggles of knitting in order to empower them to continue their Wool and the Gang projects and start new ones.</p>
+						<p class="not-ready">Coming Soon</p>
+						<a class="button" href="watg.html">COMING SOON</a>
 					</div>
-					<div class="project-description">
-						<h3>Stryker</h3>
-						<p>Stryker is one of the world's leading medical technology companies and its mission is to make healthcare better. I worked as a UX/UI Design Co-op in the Endoscopy division by conducting user research and designing web and embedded software screens.</p>
-						<a class="purple" href="stryker.html">Read my experience</a>
-					</div>
+					<img class= "column-3" src="img/WATG-landing.png">
 				</div>
-				<div class="project-more-info">
-					<div class="project-type"><h6>UX/UI</h6></div>
-					<div class="experience-type"><h6>WORK</h6></div>
-					<div class="project-duration"><h6>2021/2022</h6></div>
-				</div>
-			</div> <!--End of Stryker-->
+				
+			</section>
 
-			<!-- <div class="project">
-				<div class="photo-info">
-					<div class="project-photo">
-						<a href="loop.html"><img src="img/loop/loop.png"></a>
+			<section id="vf-section">
+				<div class="project">
+					<h2 class="column-1">2022</h2>
+					<div class="project-info column-2">
+						<h2>VENTURA FUTURE</h2>
+						<p>A deep study of Dan Friedman, the radical modernist designer. Design qualities extracted from the study, applied to a microsite to boost the applicant pool for Ventura Future, a Milan-based cultural organization.</p>
+						<p class="not-ready">Coming Soon</p>
+						<a class="button" href="vf.html">COMING SOON</a>
 					</div>
-					<div class="project-description">
-						<h3>Loop</h3>
-						<p>Loop is a platform where companies are able to hold internal networking sessions remotely to encourage community building during the times where peers are unavailable to meet online. Loop looks to intervene at the earlier stages of community building and allows two way touch points for peers to follow up and continue relationship building.</p>
-						<a class="purple" href="loop.html">See the process</a>
-					</div>
+					<img class= "column-3" src="img/VF-landing.png">
 				</div>
-				<div class="project-more-info">
-					<h6>UX/UI DESIGN</h6>
-					<h6>SCHOOL PROJECT</h6>
-					<h6>2021</h6>
-				</div>
-			</div> --> <!--End of Loop-->
-
-			<div class="project">
-				<div class="photo-info">
-					<div class="project-photo">
-						<a href="ventura-future.html"><img src="img/ventura-future/ventura.png"></a>
-					</div>
-					<div class="project-description">
-						<h3>Ventura Future</h3>
-						<p>Ventura Future is a cultural organization based in Milan whose focus is to highlight and promote contemporary design and new designers. Designers are urged to apply to be part of the design exhibitions that are curated by the organization and the exhibitions are held during the annual Milan Design Week.</p>
-						<a class="purple" href="ventura-future.html">See the process</a>
-					</div>
-				</div>
-				<div class="project-more-info">
-					<div class="project-type"><h6>VISUAL</h6></div>
-					<div class="experience-type"><h6>SCHOOL</h6></div>
-					<div class="project-duration"><h6>2020</h6></div>
-				</div>
-			</div> <!--End of Ventura Future-->
-
-			<div class="project">
-				<div class="photo-info">
-					<div class="project-photo">
-						<a href="caffe-mira.html"><img src="img/caffe-mira/caffe-mira.png"></a>
-					</div>
-					<div class="project-description">
-						<h3>Caffe Mira</h3>
-						<p>Caffe Mira is a cafe located in downtown Vancouver with two locations. They are known for their great customer service and aims to present themselves as a Canadian-Asian cafe. Staffing at Caffe Mira is made up of only Japanese and Korean working holiday visa holders. This project dives deeper into the understaffing issues at Caffe Mira and a proposed solution to overcome this barrier.</p>
-						<a class="purple" href="caffe-mira.html">See the process</a>
-					</div>
-				</div>
-				<div class="project-more-info">
-					<div class="project-type"><h6>UX RESEARCH</h6></div>
-					<div class="experience-type"><h6>CLIENT</h6></div>
-					<div class="project-duration"><h6>2021</h6></div>
-				</div>
-			</div> <!--End of Caffe Mira-->
-
-			<div class="project">
-				<div class="photo-info">
-					<div class="project-photo">
-						<a href="dippd.html"><img src="img/dippd/dippd.png"></a>
-					</div>
-					<div class="project-description">
-						<h3>Dipp'd Donuts</h3>
-						<p>Dipp'd is a fictional donut shop based in Toronto, Ontario. Dipp'd is looking to expand their business by allowing online purchases for either delivery or pickup. This project is centred around the design and creation of their ecommerce store as well as the research that backs up the decisions the team has made.</p>
-						<a class="purple" href="dippd.html">See the process</a>
-					</div>
-				</div>
-				<div class="project-more-info">
-					<div class="project-type"><h6>FRONT-END</h6></div>
-					<div class="experience-type"><h6>SCHOOL</h6></div>
-					<div class="project-duration"><h6>2021</h6></div>
-				</div>
-			</div> <!--End of Dipp'd Donuts-->
-			
-		</div> <!-- end of projects container-->
-
-		<footer> 
+			</section>
+			<footer> 
 			<div class= "footer">
-				<div class="footer-left-item"><h6>LAST UPDATED AUGUST 2022</h6></div>
-				<div class="back-to-top"><h6 onclick="topFunction()" id="topButton" title="Go to top">BACK TO TOP</h6></div>
-				<div class="footer-right-item"><h6>CODED BY JOANNA</h6></div>
+				<div class="footer-left-item"><p>LAST UPDATED JAN 2023</p></div>
+				<div class="back-to-top"><p onclick="topFunction()" id="topButton" title="Go to top">BACK TO TOP</p></div>
+				<div class="footer-right-item"><p>CODED BY JOANNA</p></div>
 			</div>
 		</footer>
+		</section> <!-- end of projects section -->
 
 	</div> <!-- end of main-container-->
 	
 
 	<script src="js/accordion.js"></script>
 	<script src="js/scrollToTop.js"></script>
-	<script src="js/countDown.js"></script>
 
 </body>
 </html>
