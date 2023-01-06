@@ -1,4 +1,4 @@
-/*GLOBAL===================*/
+/*====================GLOBAL========================*/
 *{
 	box-sizing: border-box;
 }
@@ -29,11 +29,42 @@ video{
 	display: none;
 }
 
-.video-mobile{
-	width:50%;
+/*====================FREQUENTLY USED=========================*/
+.full-span{
+	grid-column: 1/span 12;
 }
 
-/***ICON***/
+.margin-zero{
+	margin:0;
+}
+
+.gap{
+	gap:1.5625rem;
+}
+
+.extra-padding{
+	padding-bottom: 5%;
+}
+
+.flex{
+	display:flex;
+}
+
+.two-grid{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1.5625rem;
+}
+
+.column-one{
+	grid-column: 1;
+}
+
+.column-two{
+	grid-column: 2;
+}
+
+/*====================ICONS AND BUTTONS=========================*/
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 
 .arrow-to-projects{
@@ -53,12 +84,13 @@ video{
 	text-align: center;
 }
 
-/***TYPOGRAPHY***/
+/*====================TYPOGRAPHY=========================*/
 h1{
 	font-family: 'Libre Franklin', sans-serif;
 	font-size:2rem;
 	font-weight: 400;
 	color:white;
+	max-width:80ch;
 }
 
 h2{
@@ -66,6 +98,7 @@ h2{
 	font-size:1.25rem;
 	font-weight: 400;
 	color:white;
+	max-width:45ch;
 }
 
 h3{
@@ -73,6 +106,7 @@ h3{
 	font-size:0.8rem;
 	font-weight: 500;
 	color:white;
+	max-width:50ch;
 }
 
 a{
@@ -93,7 +127,11 @@ p, li{
 	color:white;
 }
 
-/***COLOUR***/
+em{
+	text-decoration: underline white;
+}
+
+/*====================COLOUR AND DECO=========================*/
 .black{
 	color:black;
 }
@@ -118,7 +156,7 @@ p, li{
 	text-decoration:underline white;
 }
 
-/***TOP NAV***/
+/*====================TOP NAV=========================*/
 
 .main-nav-container{
 	margin: 0 5% 0 5%;
@@ -132,10 +170,7 @@ p, li{
 	gap:25px;
 }
 
-/***PROJECT NAVIGATION***/
-.landing{
-	grid-column: 1/span 12;
-}
+/*====================PROJECT NAV=========================*/
 .project-navigation{
 	margin-top:10%;
 }
@@ -145,14 +180,6 @@ p, li{
 	grid-template-columns: repeat(12, 1fr);
 	grid-gap:1.5625rem;
 	border-bottom:0.8px solid white;
-}
-
-.project-nav-rows>h2{
-	margin:0;
-}
-
-.project-nav-rows>h3{
-	margin:0;
 }
 
 .column-1{
@@ -167,7 +194,7 @@ p, li{
 	grid-column: 7/span 12;
 }
 
-/**PROJECTS***/
+/*====================PROJECT SECTION=========================*/
 
 #projects{
 	grid-column: 1/span 12;
@@ -186,11 +213,7 @@ p, li{
 }
 
 
-/***FOOTER***/
-footer{
-	grid-column: 1/span 12;
-}
-
+/*====================FOOTER=========================*/
 .footer{
 	border-top:0.8px solid white;
 	display: grid;
@@ -216,9 +239,8 @@ footer{
 	margin-top:2rem;
 }
 
-/*====================ABOUT=========================*/
+/*====================ABOUT PAGE=========================*/
 .about-section{
-	grid-column: 1/span 12;
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-gap:1.5625rem;
@@ -261,7 +283,7 @@ footer{
 	grid-column: 3;
 }
 
-/***ACCORDION***/
+/*====================ACCORDIONS=========================*/
 .accordion{
 	cursor: pointer;
 	width: 100%;
@@ -301,4 +323,25 @@ footer{
 }
 
 /*====================PROJECT PAGES =========================*/
+.project-background{
+	border-top:0.8px solid white;
+	border-bottom:0.8px solid white;
+	display:flex;
+	flex-direction: row;
+	gap:1.5625rem;
+}
+
+.quote{
+	border-left:2px solid white;
+	margin:30px 20px;
+}
+
+.quote1{
+	padding-left:1.5625rem;
+}
+
+.project-sections{
+	margin-top:5%;
+	border-top:0.8px solid white;
+}
 

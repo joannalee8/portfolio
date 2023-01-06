@@ -6,7 +6,12 @@
 	margin: 6rem;
 }
 
-/**PROJECTS IN LANDING***/
+.main-project-container{
+	display:grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-gap:1.5625rem;
+	margin: 1rem 6rem;
+}
 
 
 /*Media Queries=========================================================================================================*/
@@ -76,7 +81,7 @@
 @media screen and (max-width:41em){
 
 	.main-container{
-		margin: 10% 5%;
+		margin: 10% 2%;
 	}
 
 	.footer{
