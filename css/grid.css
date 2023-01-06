@@ -84,6 +84,10 @@
 		margin: 10% 2%;
 	}
 
+	.main-project-container{
+		margin: 10% 2%;
+	}
+
 	.footer{
 		display: flex;
 		flex-direction: column;
