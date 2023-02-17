@@ -142,6 +142,10 @@ em{
 	text-decoration-thickness: 0.8px;
 }
 
+.highlight{
+	background-color: #282828;
+}
+
 /***BACK TO TOP BUTTON***/
 #topButton{
 	cursor: pointer;
@@ -173,6 +177,7 @@ em{
 /*====================PROJECT NAV=========================*/
 .project-navigation{
 	margin-top:10%;
+	margin-bottom:10%;
 }
 
 .project-nav-rows{

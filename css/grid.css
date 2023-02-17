@@ -81,11 +81,11 @@
 @media screen and (max-width:41em){
 
 	.main-container{
-		margin: 10% 2%;
+		margin: 10% 3%;
 	}
 
 	.main-project-container{
-		margin: 10% 2%;
+		margin: 10% 3%;
 	}
 
 	.footer{
@@ -96,7 +96,7 @@
 
 
 	h1{
-		font-size: 1.75rem;
+		font-size: 1.25rem;
 	}
 
 	h2{
