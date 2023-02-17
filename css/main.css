@@ -1,7 +1,4 @@
 /*====================GLOBAL========================*/
-.temp>h2{
-	text-align: center;
-}
 
 *{
 	box-sizing: border-box;
@@ -148,6 +145,7 @@ em{
 
 .highlight{
 	background-color: #282828;
+	font-weight: 400;
 }
 
 /***BACK TO TOP BUTTON***/
