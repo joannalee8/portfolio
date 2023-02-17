@@ -1,4 +1,8 @@
 /*====================GLOBAL========================*/
+.temp>h2{
+	text-align: center;
+}
+
 *{
 	box-sizing: border-box;
 }
