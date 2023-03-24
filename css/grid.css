@@ -3,7 +3,7 @@
 	display:grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-gap:1.5625rem;
-	margin: 6rem;
+	margin: 10%;
 }
 
 .main-project-container{
@@ -17,6 +17,16 @@
 /*Media Queries=========================================================================================================*/
 
 @media screen and (min-width:106em){
+
+	.main-container{
+		margin: 20%;
+	}
+
+
+}
+
+
+@media screen and (max-width:106em){
 
 	.main-wrapper{
 		margin: 0 20%;
