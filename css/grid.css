@@ -31,32 +31,19 @@
 
 }
 
+@media screen and (max-width:109em){
 
-@media screen and (max-width:106em){
-
-	.main-wrapper{
-		margin: 0 20%;
+	.main-container{
+		margin: 10%;
 	}
 
-	.text-wrapper{
-		margin:  0 30% 0 30%;
+	.main-project-container{
+		margin: 1rem 6rem;
 	}
 
 	.main-nav-container{
-		margin:  0 10% 0 10%;
-	}
-
-	.about-container{
-		grid-template-columns: repeat(4, 1fr);
-	}
-
-	.about{
-		grid-column: 3;
-	}
-	.about-container>img{
-		grid-column:2;
-	}
-
+		margin: 0 5% 0 5%;
+		padding: 10px 0 10px 0;
 
 }
 
