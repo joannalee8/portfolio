@@ -133,6 +133,7 @@
 
 	.project{
 		margin-bottom: 15%;
+		flex-direction: column-reverse;
 	}
 
 	.not-ready{
