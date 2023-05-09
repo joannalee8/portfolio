@@ -60,7 +60,7 @@
 @media screen and (max-width:56em){
 	.project{
 		display:flex;
-		flex-direction: column-reverse;
+		flex-direction: column;
 		margin-bottom: 10%;
 	}
 
@@ -75,6 +75,11 @@
 	.about-section{
 		display: flex;
 		flex-direction: column-reverse;
+	}
+
+	.about-playground{
+		display: flex;
+		flex-direction: column;
 	}
 
 
