@@ -39,6 +39,10 @@ video{
 	margin:0;
 }
 
+.bottom-margin-zero{
+	margin-bottom: 0
+}
+
 .gap{
 	gap:1.5625rem;
 }
@@ -174,6 +178,10 @@ em{
 .right-nav-items{
 	display: flex;
 	gap:25px;
+}
+
+.landing{
+	margin-bottom:10%;
 }
 
 /*====================PROJECT NAV=========================*/
