@@ -209,6 +209,10 @@ em{
 	grid-column: 7/span 12;
 }
 
+.hide-for-desktop{
+	display:none;
+}
+
 /*====================PROJECT SECTION=========================*/
 
 #projects{

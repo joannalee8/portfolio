@@ -127,6 +127,10 @@
 		display: none;
 	}
 
+	.hide-for-desktop{
+		display: block;
+	}
+
 	.project-info>h2{
 		margin-top: 0;
 	}
