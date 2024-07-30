@@ -180,9 +180,6 @@ em{
 	gap:25px;
 }
 
-.bottom-margin-10{
-	margin-bottom:10%;
-}
 
 /*====================PROJECT NAV=========================*/
 .project-navigation{
@@ -214,6 +211,10 @@ em{
 }
 
 /*====================PROJECT SECTION=========================*/
+
+.bottom-margin-10{
+	margin-bottom:10%;
+}
 
 #projects{
 	grid-column: 1/span 12;
